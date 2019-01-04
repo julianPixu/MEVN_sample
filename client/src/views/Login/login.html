@@ -1,0 +1,54 @@
+<div style="height: 100vh">
+    <div class="bg-img"></div>
+    <div class="container-fluid h-100" style="padding: 0">
+        <div class="row h-100">
+            <div class="col-lg-4 col-md-6 col-12" style="background: rgba(0,0,0,0.3)">
+                <div class="row" style="margin-top: 45vh">
+                    <div class="col-12" style="text-align: center">
+                        <h3 style="color:white; text-shadow: 0 0 10px rgba(255, 200, 21,0.7);font-size: 3em;font-weight: bold;">VACASIONS</h3>
+                        <div class="col-10 offset-1 form-control mt-5" style="border: none;background: transparent">
+                                <i class="fas fa-user-circle" style="color:white;font-size: 1.4em"></i>
+                                <input class="form-input ml-2" type="text" v-model="username">
+                            </div>
+                            <div class="col-10 offset-1 mt-4 form-control" style="border: none;background: transparent"> 
+                                <i v-if="!showPass" class="fas fa-lock" style="color:white;font-size: 1.4em;cursor: pointer;" @click="showPass=!showPass"></i>
+                                <i v-if="showPass" class="fas fa-lock-open" style="color:white;font-size: 1.12em;cursor: pointer;" @click="showPass=!showPass"></i>
+                                <input class="form-input ml-2" :type="showPass?'text':'password'" v-model="password">
+
+                            </div>
+                            <div class="col-12 mt-2" style="text-align: center">
+                                <button class="btn" @click="login()">LOGIN</button>
+                            </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+                   <!-- <v-flex xs10>
+                        <v-text-field label="Prepend" prepend-icon="place"></v-text-field>
+                    </v-flex>
+                
+                </v-layout>
+                <v-layout row wrap>
+                <v-flex xs10>
+                    <v-text-field
+                          v-model="password"
+                          :prepend-icon="showPass ? 'visibility_off' : 'visibility'"
+                          :type="showPass ? 'text' : 'password'"
+                          name="input-10-1"
+                          label="Normal with hint text"
+                          hint="At least 8 characters"
+                          counter
+                          @click:prepend="showPass = !showPass"
+                          class="white--text"
+                        ></v-text-field>
+                      </v-flex>
+              </v-layout>
+
+            </v-flex>
+            <v-flex xs10 md6 lg4 offset-xs1 offset-md3 offset-lg4 style="background: blue">potato</v-flex>
+        </v-layout>
+    </v-container>-->
+</div>

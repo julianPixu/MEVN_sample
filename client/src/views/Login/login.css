@@ -1,0 +1,25 @@
+.bg-img{
+    position:absolute;
+    height:100vh;
+    width:100%;
+    top:0;
+    left:0;
+     background-image: url("../../assets/fondo.jpg");
+     background-size:cover;
+      z-index:-1;
+  }
+  
+  .theme--light input{
+      color: white!important;
+  }
+  .btn{
+     color: rgb(23, 103, 117);
+     background: linear-gradient(rgb(49, 255, 245) 60%, #16978c);
+     font-weight: bold;
+  }
+
+  .btn:hover{
+      cursor: pointer;
+      background: linear-gradient(rgb(32, 138, 132) 60%, #093b37);
+    color:white;
+  }
