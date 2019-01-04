@@ -1,8 +1,5 @@
-<template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+<template src="./home.html">
+  
 </template>
 
 <script>
@@ -13,6 +10,11 @@ export default {
   name: 'home',
   components: {
     HelloWorld
+  },methods:{
+    logout: function(){
+      this.$router.push('/');
+    }
   }
 }
 </script>
+<style scoped src="./home.css"></style>
